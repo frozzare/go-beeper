@@ -1,4 +1,4 @@
-# go-beeper
+# go-beeper [![Build Status](https://travis-ci.org/frozzare/go-beeper.svg?branch=master)](https://travis-ci.org/frozzare/go-beeper)
 
  Make your terminal beep
 
