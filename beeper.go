@@ -13,9 +13,9 @@ func beep() {
 }
 
 // Beep a melody.
-func Melody(params ...string, ) {
+func Melody(params ...string, ) bool {
 	if len(params) == 0 {
-		return
+		return false
 	}
 	
 	for _, note := range params[0] {
@@ -25,10 +25,12 @@ func Melody(params ...string, ) {
 		
 		time.Sleep(time.Second + delay)
 	}
+	
+	return true
 }
 
 // Beep numbers of times.
-func Beep(params ...int) {
+func Beep(params ...int) bool {
 	if (len(params) == 0) {
 		params = make([]int, 1)
 		params[0] = 1
@@ -42,4 +44,6 @@ func Beep(params ...int) {
 			}
 		}
 	}
+	
+	return true
 }
