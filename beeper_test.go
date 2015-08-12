@@ -1,8 +1,9 @@
 package beeper
 
 import (
-	"github.com/bmizerany/assert"
 	"testing"
+
+	"github.com/frozzare/go-assert"
 )
 
 // Beep one time
